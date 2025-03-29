@@ -7,7 +7,7 @@ const projects = [
         description: "Analyzing the impact of social media aggressiveness on climate policy legislation using data-driven insights.",
         image: "social-media-legislation.jpg",
         imageIcon: "fas fa-balance-scale",
-        tags: ["Sentiment Analysis", "Social Media", "Policy", "Climate", "Regression Analysis", "NLP", "Python"],
+        tags: ["Sentiment Analysis", "Regression Analysis", "NLP", "Python"],
         category: "data-science",
         links: {
             github: "https://github.com/osheengupta/Social-Media-Influence-on-Legislation",
@@ -20,7 +20,7 @@ const projects = [
         description: "Your AI conversation buddy who listens and doesn't judge!",
         image: "companio.jpg",
         imageIcon: "fas fa-comment-dots",
-        tags: ["AI", "Chatbot", "Conversation", "Voice Agent", "AI Agent", "Python"],
+        tags: ["AI", "AI VoiceAgent", "Python"],
         category: "ai-agent",
         winner: true, // Mark as winner
         links: {
@@ -36,7 +36,7 @@ const projects = [
         description: "A powerful AI research assistant that analyzes multiple URLs simultaneously using Claude 3, providing intelligent insights and question-answering capabilities with source attribution.",
         image: "research-assistant.png",
         imageIcon: "fas fa-search",
-        tags: ["AI", "Claude 3", "Embeddings", "RAG", "Python"],
+        tags: ["AI", "Vector Embeddings", "RAG", "Python"],
         category: "rag",
         links: {
             github: "https://github.com/osheengupta/Research-Assistant",
@@ -49,7 +49,7 @@ const projects = [
         description: "AI-powered legal assistant that helps users understand their legal rights by finding relevant court cases and explaining them in plain language using vector search and language models.",
         image: "courtiq.jpg",
         imageIcon: "fas fa-gavel",
-        tags: ["AI", "Legal Tech", "Vector Search", "LLM", "RAG", "Python"],
+        tags: ["AI", "Vector Search", "LLM", "RAG", "Python"],
         category: "rag",
         winner: true, // Mark as winner
         links: {
@@ -64,7 +64,7 @@ const projects = [
         description: "A machine learning system that predicts optimal crop varieties for farmers using environmental and soil data, achieving 80% accuracy with Random Forest models.",
         image: "crop-prediction.jpg",
         imageIcon: "fas fa-seedling",
-        tags: ["Machine Learning", "Random Forest", "Agriculture", "Prediction", "Tableau", "Python"],
+        tags: ["Machine Learning", "Prediction", "Tableau", "Python"],
         category: "machine-learning",
         winner: true, // Mark as winner
         links: {
@@ -78,7 +78,7 @@ const projects = [
         description: "A classification model to identify if a patient is susceptible to a heart stroke or not, using machine learning algorithms.",
         image: "heart-stroke.jpg",
         imageIcon: "fas fa-heartbeat",
-        tags: ["Classification", "Healthcare", "Machine Learning", "Python"],
+        tags: ["Classification", "Machine Learning", "Python"],
         category: "machine-learning",
         links: {
             github: "https://github.com/osheengupta/Heart-stroke-prediction",
@@ -91,7 +91,7 @@ const projects = [
         description: "This project aims at classifying tumors in two categories - Malignant & Benign, with the help of machine learning models.",
         image: "breast-cancer.jpg",
         imageIcon: "fas fa-ribbon",
-        tags: ["Classification", "Healthcare", "Machine Learning", "Python"],
+        tags: ["Classification", "Machine Learning", "Python"],
         category: "data-science",
         links: {
             github: "https://github.com/osheengupta/Breast-Cancer-Classification",
@@ -104,7 +104,7 @@ const projects = [
         description: "Analysis of the data science job market trends, skills in demand, and industry requirements.",
         image: "job-market.jpg",
         imageIcon: "fas fa-briefcase",
-        tags: ["Web Scraping", "Data Analysis", "Job Market", "Visualization", "Tableau", "Machine Learning", "Python"],
+        tags: ["Web Scraping", "Visualization", "Tableau", "Machine Learning", "Python"],
         category: "machine-learning",
         links: {
             github: "https://github.com/osheengupta/Data-Science-Job-Market-Analysis",
@@ -117,7 +117,7 @@ const projects = [
         description: "Developed predictive models to determine loan approval likelihood based on applicant data.",
         image: "SBA.jpeg",
         imageIcon: "fas fa-money-bill-wave",
-        tags: ["KNN", "Logistic Regression", "Decision Tree", "Random Forest", "Light GBM", "Neural Networks", "Discriminant Analysis", "Machine Learning", "Python"],
+        tags: ["Machine Learning", "Classification", "Python"],
         category: "machine-learning",
         links: {
             github: "https://github.com/osheengupta/Predictive-Modeling-on-Loan-Approvals",
@@ -131,6 +131,20 @@ function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = `project-card ${project.category}`;
     card.setAttribute('data-id', project.id);
+    
+    // Check if project only has GitHub link and no other links
+    const hasOnlyGithub = project.links.github && 
+                         !project.links.devpost && 
+                         !project.links.medium && 
+                         (!project.links.demo || project.links.demo === '#');
+    
+    // If it only has GitHub link, make the entire card clickable
+    if (hasOnlyGithub) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function() {
+            window.open(project.links.github, '_blank');
+        });
+    }
     
     // Add winner banner if project is marked as winner
     if (project.winner) {
