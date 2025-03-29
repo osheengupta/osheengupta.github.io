@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osheen Gupta | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-text">OG</div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#events-gallery">Events</a></li>
+                <li><a href="#featured-in">Featured</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Osheen</span></h1>
+                    <h2>Data Scientist & Analytics Professional</h2>
+                    <p>Transforming data into actionable insights and innovative solutions</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/osheengupta" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/osheengupta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@osheengupta1994" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a passionate data scientist and analytics professional with expertise in transforming complex data into actionable insights. My background combines technical skills with business acumen, allowing me to bridge the gap between data and strategic decision-making.</p>
+                        <p>With experience in machine learning, statistical analysis, and data visualization, I enjoy tackling challenging problems and developing innovative solutions that drive business value.</p>
+                        <p>Beyond my core expertise, I'm actively expanding my skills in designing and deploying AI-powered products from concept to implementation. My participation in multiple hackathons has allowed me to rapidly prototype solutions, collaborate with diverse teams, and stay at the forefront of emerging technologies. I embrace a lifelong learning mindset, constantly seeking new challenges that push the boundaries of what's possible with data and AI.</p>
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>R</span>
+                                <span>SQL</span>
+                                <span>Machine Learning</span>
+                                <span>Data Visualization</span>
+                                <span>Statistical Analysis</span>
+                                <span>Deep Learning</span>
+                                <span>Tableau</span>
+                                <span>Power BI</span>
+                                <span>AI Agents</span>
+                                <span>RAG</span>
+                                <span>Web Scraping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/profile-photo.png" alt="Osheen Gupta" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Categories</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                    <button class="filter-btn" data-filter="dashboards">Dashboards</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="tableau">Tableau</button>
+                    <button class="filter-btn" data-filter="nlp">NLP</button>
+                    <button class="filter-btn" data-filter="ai agent">AI Agent</button>
+                    <button class="filter-btn" data-filter="rag">RAG</button>
+                    <button class="filter-btn" data-filter="r">R</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically populated from projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-content">
+                    <div class="resume-download">
+                        <a href="Osheen_Gupta_Resume.pdf" class="btn primary-btn" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="resume-sections">
+                        <div class="resume-section">
+                            <h3>Education</h3>
+                            <div class="timeline">
+                                <!-- Will be populated from resume.js -->
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h3>Experience</h3>
+                            <div class="timeline">
+                                <!-- Will be populated from resume.js -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Gallery Section -->
+        <section id="events-gallery" class="events-gallery">
+            <div class="container">
+                <h2 class="section-title">Events & Competitions</h2>
+                <p class="section-subtitle">Highlights from hackathons, conferences, and competitions I've participated in</p>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="images/event1.jpg" alt="Women in AI RAG Hackathon">
+                        <div class="gallery-caption">
+                            <h3>Women in AI RAG Hackathon</h3>
+                            <p>Built CourtIQ, an AI-powered legal assistant that helps users understand their legal rights through relevant court cases. <a href="https://medium.com/@osheengupta1994/courtiq-making-legal-rights-accessible-through-ai-992206e05dc5" target="_blank" class="gallery-link">Read about it on Medium</a></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event2.jpeg" alt="Creator Corner's Multimodal AI Agent Hackathon">
+                        <div class="gallery-caption">
+                            <h3>Creator Corner's Multimodal AI Agent Hackathon</h3>
+                            <p>Built Fixit: A real-time appliance troubleshooting system</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event3.jpg" alt="HackHayward">
+                        <div class="gallery-caption">
+                            <h3>HackHayward</h3>
+                            <p>Created Companio, an innovative AI conversation buddy for reducing friction in daily journaling. <a href="https://github.com/osheengupta/Companio" target="_blank" class="gallery-link">View on GitHub</a></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event4.jpg" alt="Women in Leadership Research Competition">
+                        <div class="gallery-caption">
+                            <h3>Women in Leadership Research Competition</h3>
+                            <p>Presented my research on how social media aggressiveness affects climate policy legislation. <a href="https://www.canva.com/design/DAGjEYRbACk/c6J_YUqyDW6OmtTOYYfTLA/edit?utm_content=DAGjEYRbACk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="gallery-link">View Presentation</a></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event5.jpeg" alt="37th Annual CSUPOM Conference">
+                        <div class="gallery-caption">
+                            <h3>37th Annual CSUPOM Conference</h3>
+                            <p>Presented my research in the Consortium of Supply Chain & Operations Management conference. <a href="https://www.canva.com/design/DAGjEoemaBc/eg82KnixeHR4jEzy6xAFCQ/edit?utm_content=DAGjEoemaBc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="gallery-link">View Presentation</a></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event6.jpeg" alt="Tesla Factory Tour">
+                        <div class="gallery-caption">
+                            <h3>Tesla Factory Tour</h3>
+                            <p>Exploring advanced manufacturing and data-driven operations at Tesla</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/oscar-research.jpg" alt="OSCAR Research Scholar">
+                        <div class="gallery-caption">
+                            <h3>OSCAR Research Scholar</h3>
+                            <p>Awarded a $2000 scholarship to research AI startups and emerging technologies. Conducted extensive literature review and analyzed 250+ AI startups across regions to assess employment trends driven by automation. <a href="https://badgr.com/public/assertions/cm4cG0j_R_CyGTTcbBM8yQ?identity__email=ogupta@horizon.csueastbay.edu" target="_blank" class="gallery-link">View Badge</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured In Section -->
+        <section id="featured-in" class="featured-in">
+            <div class="container">
+                <h2 class="section-title">Featured In</h2>
+                <p class="section-subtitle">Publications and blogs that have featured my work</p>
+                
+                <div class="featured-container">
+                    <div class="featured-item">
+                        <div class="featured-image">
+                            <img src="images/zilliz-logo.jpg" alt="Zilliz Blog">
+                        </div>
+                        <div class="featured-content">
+                            <h3>2025 Women in AI RAG Hackathon Highlights</h3>
+                            <p>My team's project CourtIQ won 2nd place in the Women in AI RAG Hackathon, as featured in Zilliz's official blog.</p>
+                            <a href="https://zilliz.com/blog/2025-women-in-ai-rag-hackathon-highlights#App-CourtIQ-2nd-place" target="_blank" class="btn secondary-btn">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more featured items as needed -->
+                    <div class="featured-item placeholder">
+                        <div class="featured-image placeholder-image">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="featured-content">
+                            <h3>More Features Coming Soon</h3>
+                            <p>As my work continues to gain recognition, additional features will be added here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="contact-subtitle">Interested to work together? Let's talk!</p>
+                <div class="contact-content">
+                    <div class="contact-info-simple">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1.669.226.8490</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>hello@osheengupta.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <p>osheengupta.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-button">
+                        <a href="mailto:hello@osheengupta.com" class="btn primary-btn">Say Hi!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Follow Me Section -->
+        <section id="follow-me" class="follow-me">
+            <div class="container">
+                <div class="follow-me-logo">
+                    <div class="logo-text">OG</div>
+                </div>
+                <h2 class="follow-title">Follow Me</h2>
+                <div class="follow-social-links">
+                    <a href="https://www.linkedin.com/in/osheengupta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/osheengupta" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com/@osheengupta1994" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.facebook.com/osheen.gupta.9/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/osheen.gupta" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Osheen Gupta. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/osheengupta" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/osheengupta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/@osheengupta1994" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="projects.js?v=1"></script>
+    <script src="resume.js"></script>
+</body>
+</html>
