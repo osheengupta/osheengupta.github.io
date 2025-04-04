@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,6 +43,7 @@
                         <li><a href="blogs.html">Blogs</a></li>
                         <li><a href="#events-gallery">Events</a></li>
                         <li><a href="#featured-in">News Featured</a></li>
+                        <li><a href="#awards">Awards</a></li>
                     </ul>
                 </li>
             </ul>
@@ -196,13 +198,6 @@
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/event6.jpeg" alt="Tesla Factory Tour">
-                        <div class="gallery-caption">
-                            <h3>Tesla Factory Tour</h3>
-                            <p>Exploring advanced manufacturing and data-driven operations at Tesla</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
                         <img src="images/oscar-research.jpg" alt="OSCAR Research Scholar">
                         <div class="gallery-caption">
                             <h3>OSCAR Research Scholar</h3>
@@ -245,10 +240,68 @@
             </div>
         </section>
 
+        <!-- Awards & Recognitions Section -->
+        <section id="awards" class="awards">
+            <div class="container">
+                <h2 class="section-title">Awards & Recognitions</h2>
+                <div class="swiper awards-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="award-item">
+                                <div class="award-image">
+                                    <img src="images/rising-star.jpg" alt="Rising Star Award" />
+                                </div>
+                                <div class="award-content">
+                                    <h3>Rising Star Award</h3>
+                                    <p>Recognized for exceptional growth and impact at Qlikmatrix</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-item">
+                                <div class="award-image">
+                                    <img src="images/rockstar.jpeg" alt="Rockstar Rookie" />
+                                </div>
+                                <div class="award-content">
+                                    <h3>Rockstar Rookie</h3>
+                                    <p>Awarded for outstanding performance as a new team member at Qlikmatrix</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-item">
+                                <div class="award-image">
+                                    <img src="images/stellar-team.jpg" alt="Stellar Team Award" />
+                                </div>
+                                <div class="award-content">
+                                    <h3>Stellar Team Award</h3>
+                                    <p>Recognized for exceptional teamwork and collaboration at Qlikmatrix</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-item">
+                                <div class="award-image">
+                                    <img src="images/spot-award.jpg" alt="Spot Award" />
+                                </div>
+                                <div class="award-content">
+                                    <h3>Spot Award</h3>
+                                    <p>Awarded for outstanding performance and going above and beyond at Qlikmatrix</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Contact Me</h2>
+                <h2 class="section-title">CONTACT ME</h2>
                 <p class="contact-subtitle">Interested to work together? Let's talk!</p>
                 <div class="contact-content">
                     <div class="contact-info-simple">
@@ -262,11 +315,11 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-globe"></i>
-                            <p>osheengupta.github.io</p>
+                            <p>osheen-gupta.com</p>
                         </div>
                     </div>
                     <div class="contact-button">
-                        <a href="mailto:osheengupta1994@gmail.com" class="btn primary-btn">Say Hi!</a>
+                        <a href="mailto:osheengupta1994@gmail.com" class="btn">Say Hi!</a>
                     </div>
                 </div>
             </div>
@@ -294,16 +347,17 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Osheen Gupta. All Rights Reserved.</p>
-                <div class="social-links">
+                <!-- <div class="social-links">
                     <a href="https://github.com/osheengupta" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/osheengupta/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://medium.com/@osheengupta1994" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://medium.com/@osheengupta1994" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a> -->
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
     <script src="projects.js?v=1"></script>
     <script src="resume.js"></script>
 </body>
